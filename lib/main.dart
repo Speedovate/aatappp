@@ -1131,7 +1131,7 @@ class MissionVisionSection extends StatelessWidget {
                       flex: 10,
                       child: _MissionThemesCard(
                         title: 'Mission themes',
-                        subtitle: 'Derived from the association profile deck.',
+                        subtitle: 'Key priorities that guide the association.',
                         items: _missionThemePrimary,
                         secondaryTitle: 'Focus areas',
                         secondarySubtitle:
@@ -1160,7 +1160,7 @@ class MissionVisionSection extends StatelessWidget {
                 SizedBox(height: 18),
                 _MissionThemesCard(
                   title: 'Mission themes',
-                  subtitle: 'Derived from the association profile deck.',
+                  subtitle: 'Key priorities that guide the association.',
                   items: _missionThemePrimary,
                 ),
                 SizedBox(height: 18),
