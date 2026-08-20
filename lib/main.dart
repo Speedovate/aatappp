@@ -478,165 +478,170 @@ class HeroSection extends StatelessWidget {
         ? (height > 0 ? height : 980.0)
         : math.max(height > 0 ? height : 980.0, isTablet ? 1080.0 : 920.0);
 
-    return SizedBox(
-      height: heroHeight,
-      child: Container(
-        color: Colors.black,
-        child: Stack(
-          children: [
-            Positioned(
-              left: 24,
-              right: 24,
-              top: 106,
-              child: IgnorePointer(
-                child: Container(
-                  height: 1,
-                  color: Colors.white.withValues(alpha: 0.1),
-                ),
-              ),
-            ),
-            Positioned(
-              right: isDesktop ? -120 : -90,
-              top: isDesktop ? 140 : 210,
-              child: IgnorePointer(
-                child: Container(
-                  width: isDesktop ? 520 : 320,
-                  height: isDesktop ? 520 : 320,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: _accent.withValues(alpha: 0.04),
-                    boxShadow: [
-                      BoxShadow(
-                        color: _accent.withValues(alpha: 0.06),
-                        blurRadius: 180,
-                        spreadRadius: 18,
-                      ),
-                    ],
+    return Container(
+      color: Colors.black,
+      padding: EdgeInsets.only(bottom: isDesktop ? 0 : 24),
+      child: SizedBox(
+        height: heroHeight,
+        child: Container(
+          color: Colors.black,
+          child: Stack(
+            children: [
+              Positioned(
+                left: 24,
+                right: 24,
+                top: 106,
+                child: IgnorePointer(
+                  child: Container(
+                    height: 1,
+                    color: Colors.white.withValues(alpha: 0.1),
                   ),
                 ),
               ),
-            ),
-            Positioned(
-              right: isDesktop ? 40 : -10,
-              top: isDesktop ? 210 : 260,
-              child: IgnorePointer(
-                child: Container(
-                  width: isDesktop ? 280 : 190,
-                  height: isDesktop ? 280 : 190,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: _accent.withValues(alpha: 0.07),
-                    boxShadow: [
-                      BoxShadow(
-                        color: _accent.withValues(alpha: 0.06),
-                        blurRadius: 120,
-                        spreadRadius: 10,
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-            Positioned(
-              left: -160,
-              bottom: -150,
-              child: IgnorePointer(
-                child: Container(
-                  width: isDesktop ? 500 : 280,
-                  height: isDesktop ? 500 : 280,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: _accent.withValues(alpha: 0.06),
-                    boxShadow: [
-                      BoxShadow(
-                        color: _accent.withValues(alpha: 0.08),
-                        blurRadius: 180,
-                        spreadRadius: 28,
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-            Positioned.fill(
-              child: Padding(
-                padding: EdgeInsets.fromLTRB(
-                  24,
-                  isDesktop ? 132 : 116,
-                  24,
-                  isDesktop ? 84 : 72,
-                ),
-                child: ConstrainedBox(
-                  constraints: const BoxConstraints(maxWidth: 1420),
-                  child: isDesktop
-                      ? LayoutBuilder(
-                          builder: (context, constraints) {
-                            return SizedBox(
-                              height: constraints.maxHeight,
-                              child: Center(
-                                child: Row(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Expanded(
-                                      flex: 11,
-                                      child: _HeroCopy(
-                                        heroStyle: heroStyle,
-                                        onPrimaryTap: onPrimaryTap,
-                                      ),
-                                    ),
-                                    const SizedBox(width: 72),
-                                    const SizedBox(
-                                      width: 500,
-                                      child: _HeroRightColumn(),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            );
-                          },
-                        )
-                      : Align(
-                          alignment: Alignment.topCenter,
-                          child: ConstrainedBox(
-                            constraints: const BoxConstraints(maxWidth: 452),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                _HeroCopy(
-                                  heroStyle: heroStyle,
-                                  onPrimaryTap: onPrimaryTap,
-                                ),
-                                const SizedBox(height: 28),
-                                const _HeroHighlight(),
-                                const _HeroStatsRail(),
-                              ],
-                            ),
-                          ),
+              Positioned(
+                right: isDesktop ? -120 : -90,
+                top: isDesktop ? 140 : 210,
+                child: IgnorePointer(
+                  child: Container(
+                    width: isDesktop ? 520 : 320,
+                    height: isDesktop ? 520 : 320,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: _accent.withValues(alpha: 0.04),
+                      boxShadow: [
+                        BoxShadow(
+                          color: _accent.withValues(alpha: 0.06),
+                          blurRadius: 180,
+                          spreadRadius: 18,
                         ),
-                ),
-              ),
-            ),
-            Positioned(
-              left: 0,
-              right: 0,
-              bottom: 0,
-              child: IgnorePointer(
-                child: Container(
-                  height: 120,
-                  decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter,
-                      colors: [
-                        Colors.transparent,
-                        _surface.withValues(alpha: 0.08),
                       ],
                     ),
                   ),
                 ),
               ),
-            ),
-          ],
+              Positioned(
+                right: isDesktop ? 40 : -10,
+                top: isDesktop ? 210 : 260,
+                child: IgnorePointer(
+                  child: Container(
+                    width: isDesktop ? 280 : 190,
+                    height: isDesktop ? 280 : 190,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: _accent.withValues(alpha: 0.07),
+                      boxShadow: [
+                        BoxShadow(
+                          color: _accent.withValues(alpha: 0.06),
+                          blurRadius: 120,
+                          spreadRadius: 10,
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: -160,
+                bottom: -150,
+                child: IgnorePointer(
+                  child: Container(
+                    width: isDesktop ? 500 : 280,
+                    height: isDesktop ? 500 : 280,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: _accent.withValues(alpha: 0.06),
+                      boxShadow: [
+                        BoxShadow(
+                          color: _accent.withValues(alpha: 0.08),
+                          blurRadius: 180,
+                          spreadRadius: 28,
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              Positioned.fill(
+                child: Padding(
+                  padding: EdgeInsets.fromLTRB(
+                    24,
+                    isDesktop ? 132 : 116,
+                    24,
+                    isDesktop ? 84 : 72,
+                  ),
+                  child: ConstrainedBox(
+                    constraints: const BoxConstraints(maxWidth: 1420),
+                    child: isDesktop
+                        ? LayoutBuilder(
+                            builder: (context, constraints) {
+                              return SizedBox(
+                                height: constraints.maxHeight,
+                                child: Center(
+                                  child: Row(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Expanded(
+                                        flex: 11,
+                                        child: _HeroCopy(
+                                          heroStyle: heroStyle,
+                                          onPrimaryTap: onPrimaryTap,
+                                        ),
+                                      ),
+                                      const SizedBox(width: 72),
+                                      const SizedBox(
+                                        width: 500,
+                                        child: _HeroRightColumn(),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              );
+                            },
+                          )
+                        : Align(
+                            alignment: Alignment.topCenter,
+                            child: ConstrainedBox(
+                              constraints: const BoxConstraints(maxWidth: 452),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  _HeroCopy(
+                                    heroStyle: heroStyle,
+                                    onPrimaryTap: onPrimaryTap,
+                                  ),
+                                  const SizedBox(height: 28),
+                                  const _HeroHighlight(),
+                                  const _HeroStatsRail(),
+                                ],
+                              ),
+                            ),
+                          ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 0,
+                right: 0,
+                bottom: 0,
+                child: IgnorePointer(
+                  child: Container(
+                    height: 120,
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                        begin: Alignment.topCenter,
+                        end: Alignment.bottomCenter,
+                        colors: [
+                          Colors.transparent,
+                          _surface.withValues(alpha: 0.08),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
