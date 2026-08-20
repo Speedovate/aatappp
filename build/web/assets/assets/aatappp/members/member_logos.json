@@ -1,14 +1,14 @@
 [
   {
     "associationName": "A&A Plaza Hotel",
-    "officialBrandName": null,
+    "officialBrandName": "A&A Plaza Hotel",
     "category": "Hotels & Resorts",
     "type": "Hotel",
     "officialUrl": "https://www.facebook.com/aaplazahotel/",
-    "logoSourceUrl": null,
-    "assetPath": null,
-    "verificationStatus": "needs_manual_review",
-    "notes": "Facebook-only source; no confidently extracted official brand asset in this pass."
+    "logoSourceUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsVaX7Oo_qAeQ83RfscY75EfsRr30U4qGJ7-JodkqgiaTdNaDjBozVN0RE&s=10",
+    "assetPath": "assets/aatappp/members/hotels_resorts/aa-plaza-hotel.jpg",
+    "verificationStatus": "user_provided_source",
+    "notes": "Uses the user-provided external image source for the current member pill artwork."
   },
   {
     "associationName": "Astoria Palawan",
@@ -16,10 +16,10 @@
     "category": "Hotels & Resorts",
     "type": "Resort / Hotel",
     "officialUrl": "https://astoriapalawan.com/",
-    "logoSourceUrl": "https://astoriapalawan.com/wp-content/uploads/2020/03/logo-APW.png",
-    "assetPath": "assets/aatappp/members/hotels_resorts/astoria-palawan.png",
-    "verificationStatus": "verified_official_website",
-    "notes": null
+    "logoSourceUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRJaxpsRGTqt0NOoXTN65o0Q1HrQ9kksNmc2H1guXZ8QtkkEwYFaZTAnY&s=10",
+    "assetPath": "assets/aatappp/members/hotels_resorts/astoria-palawan-user-source.jpg",
+    "verificationStatus": "user_provided_source",
+    "notes": "Uses the user-provided external image source for the current member pill artwork."
   },
   {
     "associationName": "Aziza Paradise Hotel",
@@ -33,37 +33,37 @@
     "notes": "Official site exposed a raster logo file rather than a transparent PNG or SVG."
   },
   {
-    "associationName": "Best Western Plus The Ivywall Hotel",
-    "officialBrandName": null,
+    "associationName": "Best Western Plus the Ivywall Hotel",
+    "officialBrandName": "Best Western Plus the Ivywall Hotel",
     "category": "Hotels & Resorts",
     "type": "Hotel",
     "officialUrl": "https://www.bestwestern.com/en_US/book/hotels-in-puerto-princesa/best-western-plus-the-ivywall-hotel-palawan/propertyCode.99104.html",
-    "logoSourceUrl": null,
-    "assetPath": null,
-    "verificationStatus": "needs_manual_review",
-    "notes": "Official Best Western property page was reachable, but the correct property-associated brand asset was not confidently isolated in this pass."
+    "logoSourceUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFJgJUZSzQWmXvWHNdK9TOznT7Fs-YvD_RsHm52A7Y9ic6sQ0_tFHnc-U&s=10",
+    "assetPath": "assets/aatappp/members/hotels_resorts/best-western-plus-the-ivywall-hotel.jpg",
+    "verificationStatus": "user_provided_source",
+    "notes": "Uses the user-provided external image source for the current member pill artwork."
   },
   {
     "associationName": "Citystate Asturias Hotel",
-    "officialBrandName": null,
+    "officialBrandName": "Citystate Asturias Hotel",
     "category": "Hotels & Resorts",
     "type": "Hotel",
     "officialUrl": "https://www.facebook.com/citystateasturias/",
-    "logoSourceUrl": null,
-    "assetPath": null,
-    "verificationStatus": "needs_manual_review",
-    "notes": "Facebook-only source; no confidently extracted official brand asset in this pass."
+    "logoSourceUrl": "https://alcgroup.com.ph/assets/citystate_austrias_hotel-D3C3n_Qu.png",
+    "assetPath": "assets/aatappp/members/hotels_resorts/citystate-asturias-hotel.png",
+    "verificationStatus": "verified_official_website",
+    "notes": "Downloaded from the broader ALC Group property-controlled website asset."
   },
   {
     "associationName": "Costa Palawan Resort",
-    "officialBrandName": null,
+    "officialBrandName": "Costa Palawan Resort",
     "category": "Hotels & Resorts",
     "type": "Resort",
     "officialUrl": "https://costapalawanresort.com/",
-    "logoSourceUrl": null,
-    "assetPath": null,
-    "verificationStatus": "needs_manual_review",
-    "notes": "Official site did not expose a confidently retrievable logo asset in this pass."
+    "logoSourceUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThBsWBrTtDdCTiA-XB697YQMQjS5EqsAzGQtupSDhUxdKO1bSMcz-qcyk&s=10",
+    "assetPath": "assets/aatappp/members/hotels_resorts/costa-palawan-resort-user-source.jpg",
+    "verificationStatus": "user_provided_source",
+    "notes": "Uses the user-provided external image source for the current member pill artwork."
   },
   {
     "associationName": "Daluyon Beach and Mountain Resort",
@@ -77,40 +77,29 @@
     "notes": null
   },
   {
-    "associationName": "Empire Suites Hotel",
-    "officialBrandName": null,
-    "category": "Hotels & Resorts",
-    "type": "Suites Hotel",
-    "officialUrl": "https://www.facebook.com/holidaysuitesbusinessdistrict/",
-    "logoSourceUrl": null,
-    "assetPath": null,
-    "verificationStatus": "needs_manual_review",
-    "notes": "Potential branding conflict with Holiday Suites Business District; no safe substitution made."
-  },
-  {
-    "associationName": "Fersal Hotel - Puerto Princesa",
-    "officialBrandName": null,
+    "associationName": "Fersal Hotel",
+    "officialBrandName": "Fersal Hotel",
     "category": "Hotels & Resorts",
     "type": "Hotel",
     "officialUrl": "https://fersalhotel.com/fersal-hotel-puerto-princesa-city-palawan/",
-    "logoSourceUrl": null,
-    "assetPath": null,
-    "verificationStatus": "needs_manual_review",
-    "notes": "Official site was reachable, but a clean direct property logo asset was not confidently isolated in this pass."
+    "logoSourceUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmgc3Mdw994o0Cg4kjbbUbiHplPLO_116QkUuBHuRDS82QuDv64nFyseo&s=10",
+    "assetPath": "assets/aatappp/members/hotels_resorts/fersal-hotel.jpg",
+    "verificationStatus": "user_provided_source",
+    "notes": "Uses the user-provided external image source for the current member pill artwork."
   },
   {
     "associationName": "Four Points by Sheraton Palawan",
-    "officialBrandName": null,
+    "officialBrandName": "Four Points by Sheraton Palawan",
     "category": "Hotels & Resorts",
     "type": "Hotel",
     "officialUrl": "https://www.marriott.com/en-us/hotels/ppsfp-four-points-palawan-puerto-princesa/overview/",
-    "logoSourceUrl": null,
-    "assetPath": null,
-    "verificationStatus": "needs_manual_review",
-    "notes": "Official Marriott property page was reachable, but the correct Four Points brand asset was not confidently isolated in this pass."
+    "logoSourceUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR-6mCpkYupyf3eDaXJ1mt0j3OLjtWtGKIsPFYic1KaVVSXG8-aOXRyXc&s=10",
+    "assetPath": "assets/aatappp/members/hotels_resorts/four-points-by-sheraton-palawan.jpg",
+    "verificationStatus": "user_provided_source",
+    "notes": "Uses the user-provided external image source that matches Four Points branding."
   },
   {
-    "associationName": "Go Hotels Puerto Princesa",
+    "associationName": "Go Hotels",
     "officialBrandName": "Go Hotels",
     "category": "Hotels & Resorts",
     "type": "Hotel",
@@ -121,7 +110,7 @@
     "notes": "Downloaded from the official Go Hotels branch site; chain brand mark rather than a branch-specific lockup."
   },
   {
-    "associationName": "Holiday Suites Puerto Princesa",
+    "associationName": "Holiday Suites",
     "officialBrandName": "Holiday Suites",
     "category": "Hotels & Resorts",
     "type": "Suites Hotel",
@@ -144,50 +133,50 @@
   },
   {
     "associationName": "Palawan Uno Hotel",
-    "officialBrandName": null,
+    "officialBrandName": "Palawan Uno Hotel",
     "category": "Hotels & Resorts",
     "type": "Hotel",
     "officialUrl": "https://www.facebook.com/palawanunohotel/",
-    "logoSourceUrl": null,
-    "assetPath": null,
-    "verificationStatus": "needs_manual_review",
-    "notes": "Facebook-only source; no confidently extracted official brand asset in this pass."
+    "logoSourceUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-tAl7a2sOExybWsyv8WuidW3uDJYo8-ce8we-n4klMcZ68JieTRl8vSA&s=10",
+    "assetPath": "assets/aatappp/members/hotels_resorts/palawan-uno-hotel.jpg",
+    "verificationStatus": "user_provided_source",
+    "notes": "Uses the user-provided external image source for the current member pill artwork."
   },
   {
     "associationName": "Sotogrande Palawan Hotel",
-    "officialBrandName": null,
+    "officialBrandName": "Sotogrande Palawan Hotel",
     "category": "Hotels & Resorts",
     "type": "Hotel",
     "officialUrl": "https://www.facebook.com/officialsotograndepalawan/",
-    "logoSourceUrl": null,
-    "assetPath": null,
-    "verificationStatus": "needs_manual_review",
-    "notes": "Facebook-only source; no confidently extracted official brand asset in this pass."
+    "logoSourceUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf5_FLC6Ygw-UZt7wpC0-yCGB-6xOYLHBcK8KHk0Alp5-yoBrp4Lr9XttU&s=10",
+    "assetPath": "assets/aatappp/members/hotels_resorts/sotogrande-palawan-hotel.jpg",
+    "verificationStatus": "user_provided_source",
+    "notes": "Uses the user-provided external image source for the current member pill artwork."
   },
   {
     "associationName": "Sunlight Guest Hotel Inc.",
-    "officialBrandName": null,
+    "officialBrandName": "Sunlight Guest Hotel Inc.",
     "category": "Hotels & Resorts",
     "type": "Guest Hotel",
     "officialUrl": "https://www.facebook.com/pages/Sunlight-Guest-Hotel-Puerto-Princesa-Palawan/310557065634916",
-    "logoSourceUrl": null,
-    "assetPath": null,
-    "verificationStatus": "needs_manual_review",
-    "notes": "Property identity needs confirmation specifically for the Puerto Princesa property."
+    "logoSourceUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlb77aE7ZyyDa2FL59s_QhO4sA5VW0VSi4zRZRgac-_vqmopfFJrlFQM-3&s=10",
+    "assetPath": "assets/aatappp/members/hotels_resorts/sunlight-guest-hotel-inc.jpg",
+    "verificationStatus": "user_provided_source",
+    "notes": "Uses the user-provided external image source for the current member pill artwork."
   },
   {
     "associationName": "The Dome Palawan",
-    "officialBrandName": null,
+    "officialBrandName": "The Dome Palawan",
     "category": "Hotels & Resorts",
     "type": "Hotel / Resort",
     "officialUrl": "https://www.facebook.com/thedomepuertoprincesa/",
-    "logoSourceUrl": null,
-    "assetPath": null,
-    "verificationStatus": "needs_manual_review",
-    "notes": "Facebook-only source; no confidently extracted official brand asset in this pass."
+    "logoSourceUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3YVorZsWh6x54l3Ex9a9Pi3uFe9QUZcpDhWkOTzjURmLmxC45I3cvZuhf&s=10",
+    "assetPath": "assets/aatappp/members/hotels_resorts/the-dome-palawan.jpg",
+    "verificationStatus": "user_provided_source",
+    "notes": "Uses the user-provided external image source that matches The Dome branding."
   },
   {
-    "associationName": "The Funny Lion - Puerto Princesa",
+    "associationName": "The Funny Lion",
     "officialBrandName": "The Funny Lion",
     "category": "Hotels & Resorts",
     "type": "Hotel / Resort",
@@ -214,35 +203,35 @@
     "category": "Hotels & Resorts",
     "type": "Hotel",
     "officialUrl": "https://crownhotelpalawan.com/",
-    "logoSourceUrl": "https://crownhotelpalawan.com/wp-content/uploads/2023/07/cropped-Crown-Hotel-Logo-e1690342986758.png",
+    "logoSourceUrl": "https://crownhotelpalawan.com/wp-content/uploads/2015/08/cropped-300x200-v1.png",
     "assetPath": "assets/aatappp/members/hotels_resorts/crown-hotel-palawan-at-harbour-springs.png",
     "verificationStatus": "verified_official_website",
-    "notes": "Official site exposed a cropped logo image; retained as downloaded because it is property-controlled."
+    "notes": "Updated to the user-confirmed Crown Hotel logo image from the official website."
   },
   {
     "associationName": "Hotel Centro",
-    "officialBrandName": null,
+    "officialBrandName": "Hotel Centro",
     "category": "Hotels & Resorts",
     "type": "Hotel",
     "officialUrl": "https://www.facebook.com/HotelCentro/",
-    "logoSourceUrl": null,
-    "assetPath": null,
-    "verificationStatus": "needs_manual_review",
-    "notes": "Facebook-only source; no confidently extracted official brand asset in this pass."
+    "logoSourceUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAvH203fbjujZCbD7Cq77eJL1sVErrLvExmkJD7W7bJtzK8XvFT8HaPwg&s=10",
+    "assetPath": "assets/aatappp/members/hotels_resorts/hotel-centro.jpg",
+    "verificationStatus": "user_provided_source",
+    "notes": "Uses the user-provided external image source for the current member pill artwork."
   },
   {
     "associationName": "Ala Amid Bed & Breakfast",
-    "officialBrandName": null,
+    "officialBrandName": "Ala Amid Bed & Breakfast",
     "category": "Mabuhay Accommodations",
     "type": "Bed & Breakfast",
     "officialUrl": "https://www.facebook.com/alaamidbedandbreakfast/",
-    "logoSourceUrl": null,
-    "assetPath": null,
-    "verificationStatus": "needs_manual_review",
-    "notes": "Facebook-only source; no confidently extracted official brand asset in this pass."
+    "logoSourceUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6s3GPpUG1oz7N0WttPePLtBW8gERTrW-yTxoEzs2xYZw9KRSTP1EE8f6H&s=10",
+    "assetPath": "assets/aatappp/members/mabuhay/ala-amid-bed-and-breakfast.jpg",
+    "verificationStatus": "user_provided_source",
+    "notes": "Uses the user-provided external image source for the current member pill artwork."
   },
   {
-    "associationName": "Alvea Hotel - Puerto Princesa",
+    "associationName": "Alvea Hotel",
     "officialBrandName": "Alvea Hotel",
     "category": "Mabuhay Accommodations",
     "type": "Hotel",
@@ -265,102 +254,102 @@
   },
   {
     "associationName": "Bambu Suites",
-    "officialBrandName": null,
+    "officialBrandName": "Bambu Suites",
     "category": "Mabuhay Accommodations",
     "type": "Suites",
     "officialUrl": "https://www.facebook.com/bambusuitespalawan/",
-    "logoSourceUrl": null,
-    "assetPath": null,
-    "verificationStatus": "needs_manual_review",
-    "notes": "Facebook-only source; no confidently extracted official brand asset in this pass."
+    "logoSourceUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrpF12dID-9SR_fFL9Fk-fVAKssQtjCwnMNS-eTTMOiZ57R9AZ-2yL27Y&s=10",
+    "assetPath": "assets/aatappp/members/mabuhay/bambu-suites.jpg",
+    "verificationStatus": "user_provided_source",
+    "notes": "Uses the user-provided external image source for the current member pill artwork."
   },
   {
     "associationName": "Blue Lagoon Inn & Suites",
-    "officialBrandName": null,
+    "officialBrandName": "Blue Lagoon Inn & Suites",
     "category": "Mabuhay Accommodations",
     "type": "Inn / Suites",
     "officialUrl": "https://www.facebook.com/p/Blue-Lagoon-Inn-Suites-100064013111248/",
-    "logoSourceUrl": null,
-    "assetPath": null,
-    "verificationStatus": "needs_manual_review",
-    "notes": "Facebook-only source; no confidently extracted official brand asset in this pass."
+    "logoSourceUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5uqUZy904gpTxvNuhnhH8JewJmm_sOzgtTvHv4BUxi7OjtVdF4DxdQ5vJ&s=10",
+    "assetPath": "assets/aatappp/members/mabuhay/blue-lagoon-inn-and-suites.jpg",
+    "verificationStatus": "user_provided_source",
+    "notes": "Uses the user-provided external image source for the current member pill artwork."
   },
   {
     "associationName": "Cafemoto Lifestyle",
-    "officialBrandName": null,
+    "officialBrandName": "Cafemoto Lifestyle",
     "category": "Mabuhay Accommodations",
     "type": "Lifestyle Accommodation",
     "officialUrl": "https://www.facebook.com/onehundredpercentcafemoto/",
-    "logoSourceUrl": null,
-    "assetPath": null,
-    "verificationStatus": "needs_manual_review",
-    "notes": "Property-controlled source appears to use 100% Cafe Moto branding; discrepancy recorded, no logo downloaded."
+    "logoSourceUrl": "https://a.hwstatic.com/image/upload/f_auto,q_auto,t_40/propertyimages/3/326520/q58ilw8soexxxbqtngii.jpg",
+    "assetPath": "assets/aatappp/members/mabuhay/cafemoto-lifestyle.jpg",
+    "verificationStatus": "user_provided_source",
+    "notes": "Uses the user-provided external image source for the current member pill artwork."
   },
   {
-    "associationName": "Canvass Boutique Hotel",
+    "associationName": "Canvas Boutique Hotel",
     "officialBrandName": "Canvas Boutique Hotel",
     "category": "Mabuhay Accommodations",
     "type": "Boutique Hotel",
     "officialUrl": "https://canvasboutiquehotel.com/",
-    "logoSourceUrl": "https://canvasboutiquehotel.com/wp-content/uploads/2022/08/CANVAS-transparent-png-scaled.png",
-    "assetPath": "assets/aatappp/members/mabuhay/canvas-boutique-hotel.png",
-    "verificationStatus": "verified_official_website",
-    "notes": "Association listing spells the property as Canvass Boutique Hotel; official branding uses Canvas Boutique Hotel."
+    "logoSourceUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUlXoh6flO1E99WaCBhHIlnQsNaW_JbU5vOi9L5sx-pDjrw1RExOqsKeU&s=10",
+    "assetPath": "assets/aatappp/members/mabuhay/canvas-boutique-hotel-user-source.jpg",
+    "verificationStatus": "user_provided_source",
+    "notes": "Uses the user-provided external image source for the current member pill artwork."
   },
   {
     "associationName": "Casa Belina Tourist Inn",
-    "officialBrandName": null,
+    "officialBrandName": "Casa Belina Tourist Inn",
     "category": "Mabuhay Accommodations",
     "type": "Tourist Inn",
     "officialUrl": "https://www.facebook.com/casabelinatouristinn/",
-    "logoSourceUrl": null,
-    "assetPath": null,
-    "verificationStatus": "needs_manual_review",
-    "notes": "Facebook-only source; no confidently extracted official brand asset in this pass."
+    "logoSourceUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHK6mRUEKFH0DUIVhRMckORmvmBd_q7dgA7nRETZwjsnK1WLQXC1MJGuY_&s=10",
+    "assetPath": "assets/aatappp/members/mabuhay/casa-belina-tourist-inn.jpg",
+    "verificationStatus": "user_provided_source",
+    "notes": "Uses the user-provided external image source for the current member pill artwork."
   },
   {
     "associationName": "Casa De Praxides Tourist Inn",
-    "officialBrandName": null,
+    "officialBrandName": "Casa De Praxides Tourist Inn",
     "category": "Mabuhay Accommodations",
     "type": "Tourist Inn",
     "officialUrl": "https://www.facebook.com/p/Casa-de-Praxides-Tourist-Inn-61551913493742/",
-    "logoSourceUrl": null,
-    "assetPath": null,
-    "verificationStatus": "needs_manual_review",
-    "notes": "Facebook-only source; no confidently extracted official brand asset in this pass."
+    "logoSourceUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrkaumEMaNIPXc5muiZRVFiHymMSM5h-Ph0vZYSSD-umdMnu7gdEA018Ec&s=10",
+    "assetPath": "assets/aatappp/members/mabuhay/casa-de-praxides-tourist-inn.jpg",
+    "verificationStatus": "user_provided_source",
+    "notes": "Uses the user-provided external image source for the current member pill artwork."
   },
   {
-    "associationName": "Casana Suites",
-    "officialBrandName": null,
+    "associationName": "Casañas Suites",
+    "officialBrandName": "Casañas Suites",
     "category": "Mabuhay Accommodations",
     "type": "Suites",
     "officialUrl": "https://www.facebook.com/casanassuitepalawan/",
-    "logoSourceUrl": null,
-    "assetPath": null,
-    "verificationStatus": "needs_manual_review",
-    "notes": "Possible current spelling Casañas Suites; discrepancy recorded, no confidently extracted asset in this pass."
+    "logoSourceUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkURYJNC7eHbSyPmp3-OGJobNliRZrsVmGm7DfmkSoieuh0ZOBsNcq6_4&s=10",
+    "assetPath": "assets/aatappp/members/mabuhay/casanas-suites.jpg",
+    "verificationStatus": "user_provided_source",
+    "notes": "Uses the user-provided external image source for the current member pill artwork."
   },
   {
     "associationName": "D' Beach Resort",
-    "officialBrandName": null,
+    "officialBrandName": "D' Beach Resort",
     "category": "Mabuhay Accommodations",
     "type": "Beach Resort",
     "officialUrl": "https://www.facebook.com/DBeachResortPuertoPrincesa/",
-    "logoSourceUrl": null,
-    "assetPath": null,
-    "verificationStatus": "needs_manual_review",
-    "notes": "Facebook-only source; no confidently extracted official brand asset in this pass."
+    "logoSourceUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBA7B46iL2WemfZgnPOEWG9eP1c6WUmbIBNzgElrnmRVh8OkJAzRUDWjA&s=10",
+    "assetPath": "assets/aatappp/members/mabuhay/d-beach-resort.jpg",
+    "verificationStatus": "user_provided_source",
+    "notes": "Uses the user-provided external image source for the current member pill artwork."
   },
   {
     "associationName": "Diakopes Inn",
-    "officialBrandName": null,
+    "officialBrandName": "Diakopes Inn",
     "category": "Mabuhay Accommodations",
     "type": "Inn",
     "officialUrl": "https://www.facebook.com/diakopesinn/",
-    "logoSourceUrl": null,
-    "assetPath": null,
-    "verificationStatus": "needs_manual_review",
-    "notes": "Facebook-only source; no confidently extracted official brand asset in this pass."
+    "logoSourceUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLsZxR7eSlut_tiD4iE1NFxslZxiAZmxOwk8_Uubs1F_c992h2QQ6kPLSg&s=10",
+    "assetPath": "assets/aatappp/members/mabuhay/diakopes-inn.jpg",
+    "verificationStatus": "user_provided_source",
+    "notes": "Uses the user-provided external image source for the current member pill artwork."
   },
   {
     "associationName": "Dinah’s Tourist Inn",
@@ -386,80 +375,80 @@
   },
   {
     "associationName": "Elleis Place",
-    "officialBrandName": null,
+    "officialBrandName": "Elleis Place",
     "category": "Mabuhay Accommodations",
     "type": "Accommodation",
     "officialUrl": "https://www.facebook.com/elleisplace/",
-    "logoSourceUrl": null,
-    "assetPath": null,
-    "verificationStatus": "needs_manual_review",
-    "notes": "Facebook-only source; no confidently extracted official brand asset in this pass."
+    "logoSourceUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5xvgPNSN1s3DNvS1IHVyM7LEeqo4q13O0yvkHPu96xw&s",
+    "assetPath": "assets/aatappp/members/mabuhay/elleis-place.jpg",
+    "verificationStatus": "user_provided_source",
+    "notes": "Uses the user-provided external image source for the current member pill artwork."
   },
   {
     "associationName": "Escape Boutique Hotel",
-    "officialBrandName": null,
+    "officialBrandName": "Escape Boutique Hotel",
     "category": "Mabuhay Accommodations",
     "type": "Boutique Hotel",
     "officialUrl": "https://www.facebook.com/p/Escape-Boutique-Hotel-by-FarmBihira-Farm-61553132618395/",
-    "logoSourceUrl": null,
-    "assetPath": null,
-    "verificationStatus": "needs_manual_review",
-    "notes": "Current official page includes additional by FarmBihira Farm wording; no confidently extracted asset in this pass."
+    "logoSourceUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzqT9PxY6PmDjNgcRWnGZqwXXsT7-pxdVvn-1lhqNzX7xhUXluaqOTT2al&s=10",
+    "assetPath": "assets/aatappp/members/mabuhay/escape-boutique-hotel.jpg",
+    "verificationStatus": "user_provided_source",
+    "notes": "Uses the user-provided external image source for the current member pill artwork."
   },
   {
     "associationName": "Grande Vista Hotel",
-    "officialBrandName": null,
+    "officialBrandName": "Grande Vista Hotel",
     "category": "Mabuhay Accommodations",
     "type": "Hotel",
     "officialUrl": "https://www.facebook.com/Gvh12/",
-    "logoSourceUrl": null,
-    "assetPath": null,
-    "verificationStatus": "needs_manual_review",
-    "notes": "Facebook-only source; no confidently extracted official brand asset in this pass."
+    "logoSourceUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVGsOOFecN5NXy7OzNM-r8NYbLITOuu586hwZ_kYMuSw&s",
+    "assetPath": "assets/aatappp/members/mabuhay/grande-vista-hotel.jpg",
+    "verificationStatus": "user_provided_source",
+    "notes": "Uses the user-provided external image source for the current member pill artwork."
   },
   {
     "associationName": "Hotel Palacio",
-    "officialBrandName": null,
+    "officialBrandName": "Hotel Palacio",
     "category": "Mabuhay Accommodations",
     "type": "Hotel",
     "officialUrl": "https://www.hotelpalaciopalawan.com/",
-    "logoSourceUrl": null,
-    "assetPath": null,
-    "verificationStatus": "needs_manual_review",
-    "notes": "Official site was reachable, but a clean direct logo asset was not confidently isolated in this pass."
+    "logoSourceUrl": "https://www.hotelpalaciopalawan.com/images/uploads/logos/2698_logo.jpg",
+    "assetPath": "assets/aatappp/members/mabuhay/hotel-palacio.jpg",
+    "verificationStatus": "verified_official_website",
+    "notes": "Downloaded from the property header logo on the official website."
   },
   {
     "associationName": "KSK Serenity Resort",
-    "officialBrandName": null,
+    "officialBrandName": "KSK Serenity Resort",
     "category": "Mabuhay Accommodations",
     "type": "Resort",
     "officialUrl": "https://www.facebook.com/p/KSK-Serenity-Resort-61557125019785/",
-    "logoSourceUrl": null,
-    "assetPath": null,
-    "verificationStatus": "needs_manual_review",
-    "notes": "Facebook-only source; no confidently extracted official brand asset in this pass."
+    "logoSourceUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjBiHcOvTVbY22wAkb46c01UnuI3wrJ1Xfw1gswhCvmJjy18Hiafxv-g0&s=10",
+    "assetPath": "assets/aatappp/members/mabuhay/ksk-serenity-resort.jpg",
+    "verificationStatus": "user_provided_source",
+    "notes": "Uses the user-provided external image source for the current member pill artwork."
   },
   {
-    "associationName": "Lokal Hut Bed and Breakfast",
-    "officialBrandName": null,
+    "associationName": "Lokal Hut Bed & Breakfast",
+    "officialBrandName": "Lokal Hut Bed & Breakfast",
     "category": "Mabuhay Accommodations",
     "type": "Bed & Breakfast",
     "officialUrl": "https://www.facebook.com/p/The-Lokal-Hut-61556669164959/",
-    "logoSourceUrl": null,
-    "assetPath": null,
-    "verificationStatus": "needs_manual_review",
-    "notes": "Official branding may use The Lokal Hut; discrepancy recorded, no confidently extracted asset in this pass."
+    "logoSourceUrl": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/541894332.jpg?k=76aadf1e4be7e9b56b64184a051b7587b5357cecca33d91fbafdca98e22c384b&o=",
+    "assetPath": "assets/aatappp/members/mabuhay/lokal-hut-bed-and-breakfast.jpg",
+    "verificationStatus": "user_provided_source",
+    "notes": "Uses the user-provided external image source for the current member pill artwork."
   },
   {
     "associationName": "Lola Itangs Pension House",
-    "officialBrandName": null,
+    "officialBrandName": "Lola Itangs Pension House",
     "category": "Mabuhay Accommodations",
     "type": "Pension House",
     "officialUrl": "https://www.facebook.com/lolaitangpalawan/",
-    "logoSourceUrl": null,
-    "assetPath": null,
-    "verificationStatus": "needs_manual_review",
-    "notes": "Facebook-only source; no confidently extracted official brand asset in this pass."
+    "logoSourceUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4F8TZYCmWcshAGW9eoEIBcoQw_pMskQzyCYSFbC1-v5dPPwspCCjNj34&s=10",
+    "assetPath": "assets/aatappp/members/mabuhay/lola-itangs-pension-house.jpg",
+    "verificationStatus": "user_provided_source",
+    "notes": "Uses the user-provided external image source for the current member pill artwork."
   },
   {
     "associationName": "Orange Mangrove Pension House",
@@ -485,25 +474,25 @@
   },
   {
     "associationName": "Puerto Pension Inn",
-    "officialBrandName": null,
+    "officialBrandName": "Puerto Pension Inn",
     "category": "Mabuhay Accommodations",
     "type": "Pension House / Inn",
     "officialUrl": "https://www.facebook.com/puertopensioninn/",
-    "logoSourceUrl": null,
-    "assetPath": null,
-    "verificationStatus": "needs_manual_review",
-    "notes": "Facebook-only source; no confidently extracted official brand asset in this pass."
+    "logoSourceUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuhDcDXly5xamNEItlFbJVRxd55r8GR2CVryjksNnYds5T9aQXoa6ff8JI&s=10",
+    "assetPath": "assets/aatappp/members/mabuhay/puerto-pension-inn.jpg",
+    "verificationStatus": "user_provided_source",
+    "notes": "Uses the user-provided external image source for the current member pill artwork."
   },
   {
     "associationName": "Rodolfo Royale Hotel",
-    "officialBrandName": null,
+    "officialBrandName": "Rodolfo Royale Hotel",
     "category": "Mabuhay Accommodations",
     "type": "Hotel",
     "officialUrl": "https://www.facebook.com/p/Rodolfo-Royale-HOTEL-61571256355874/",
-    "logoSourceUrl": null,
-    "assetPath": null,
-    "verificationStatus": "needs_manual_review",
-    "notes": "Facebook-only source; no confidently extracted official brand asset in this pass."
+    "logoSourceUrl": "https://images.puertoparrot.com/filemanager/photos/3/PP-Rodolfo-Royale/logo.png",
+    "assetPath": "assets/aatappp/members/mabuhay/rodolfo-royale-hotel.png",
+    "verificationStatus": "user_provided_source",
+    "notes": "Uses the user-provided external image source for the current member pill artwork."
   },
   {
     "associationName": "Sandy Beach Hotel and Resort",
@@ -518,36 +507,36 @@
   },
   {
     "associationName": "Sheridan Boutique Hotel",
-    "officialBrandName": null,
+    "officialBrandName": "Sheridan Boutique Hotel",
     "category": "Mabuhay Accommodations",
     "type": "Boutique Hotel",
     "officialUrl": "https://sheridanboutiquehotel.com/",
-    "logoSourceUrl": null,
-    "assetPath": null,
-    "verificationStatus": "needs_manual_review",
-    "notes": "Official site was listed, but a clean direct logo asset was not confidently isolated in this pass."
+    "logoSourceUrl": "https://sheridanboutiquehotel.com/wp-content/uploads/2018/06/sheridan-boutique-logo-300x225.png",
+    "assetPath": "assets/aatappp/members/mabuhay/sheridan-boutique-hotel.png",
+    "verificationStatus": "verified_official_website",
+    "notes": "Downloaded from the hotel header logo on the official website."
   },
   {
     "associationName": "Southwind Palawan",
-    "officialBrandName": null,
+    "officialBrandName": "Southwind Palawan",
     "category": "Mabuhay Accommodations",
     "type": "Accommodation",
     "officialUrl": "https://www.facebook.com/southwindpalawan/",
-    "logoSourceUrl": null,
-    "assetPath": null,
-    "verificationStatus": "needs_manual_review",
-    "notes": "Facebook-only source; no confidently extracted official brand asset in this pass."
+    "logoSourceUrl": "https://images.puertoparrot.com/filemanager/photos/3/PP-Southwind-Palawan/17265163_395966150762594_4496462318098601989_n.gif",
+    "assetPath": "assets/aatappp/members/mabuhay/southwind-palawan.gif",
+    "verificationStatus": "user_provided_source",
+    "notes": "Uses the user-provided external image source for the current member pill artwork."
   },
   {
     "associationName": "Upgrace Inn",
-    "officialBrandName": null,
+    "officialBrandName": "Upgrace Inn",
     "category": "Mabuhay Accommodations",
     "type": "Inn",
     "officialUrl": "https://www.facebook.com/UpgraceInn/",
-    "logoSourceUrl": null,
-    "assetPath": null,
-    "verificationStatus": "needs_manual_review",
-    "notes": "Facebook-only source; no confidently extracted official brand asset in this pass."
+    "logoSourceUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJn6qGto856D3YuxsP7sdo4dNw3bvdujJqao6SzF8vgyT-JMxbC1TFI4v1&s=10",
+    "assetPath": "assets/aatappp/members/mabuhay/upgrace-inn.jpg",
+    "verificationStatus": "user_provided_source",
+    "notes": "Uses the user-provided external image source for the current member pill artwork."
   },
   {
     "associationName": "Wanderlust Bed & Breakfast",
@@ -562,13 +551,13 @@
   },
   {
     "associationName": "Whitebreeze Palawan Hotel",
-    "officialBrandName": null,
+    "officialBrandName": "Whitebreeze Palawan Hotel",
     "category": "Mabuhay Accommodations",
     "type": "Hotel",
     "officialUrl": "https://www.facebook.com/whitebreezepalawan/",
-    "logoSourceUrl": null,
-    "assetPath": null,
-    "verificationStatus": "needs_manual_review",
-    "notes": "Association listing may differ from White Breeze Palawan branding; no confidently extracted official asset in this pass."
+    "logoSourceUrl": "https://s7ap1.scene7.com/is/image/bpi/hero-white-breeze-palawan?qlt=85&wid=1024&ts=1764054211639&dpr=off",
+    "assetPath": "assets/aatappp/members/mabuhay/whitebreeze-palawan-hotel.jpg",
+    "verificationStatus": "user_provided_source",
+    "notes": "Uses the user-provided external image source for the current member pill artwork."
   }
 ]
