@@ -174,7 +174,6 @@ class _HomePageState extends State<HomePage> {
   bool _isScrolled = false;
   bool _isSnapping = false;
   double _dragDeltaY = 0;
-  Size? _lastViewportSize;
 
   @override
   void initState() {
@@ -312,15 +311,6 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     final viewportSize = MediaQuery.sizeOf(context);
-    if (_lastViewportSize != viewportSize) {
-      debugPrint(
-        '[viewport] width=${viewportSize.width.toStringAsFixed(1)}px '
-        'height=${viewportSize.height.toStringAsFixed(1)}px '
-        'previous=${_lastViewportSize == null ? 'none' : '${_lastViewportSize!.width.toStringAsFixed(1)}x${_lastViewportSize!.height.toStringAsFixed(1)}'}',
-      );
-      _lastViewportSize = viewportSize;
-    }
-
     final width = viewportSize.width;
     final isDesktop = width >= 1040;
     final heroShouldSplit = _shouldUseSplitLayout(width);
@@ -559,7 +549,6 @@ class HeroSection extends StatelessWidget {
   const HeroSection({super.key, required this.onPrimaryTap});
 
   final VoidCallback onPrimaryTap;
-  static String? _lastHeroDebugSignature;
 
   @override
   Widget build(BuildContext context) {
@@ -578,17 +567,6 @@ class HeroSection extends StatelessWidget {
         final rightColumnWidth = _splitRightColumnWidth(width);
         final leftColumnWidth = availableWidth - gap - rightColumnWidth;
         final shouldSplit = _shouldUseSplitLayout(width);
-        final heroDebugSignature =
-            'width=${availableWidth.toStringAsFixed(1)} '
-            'height=${(outerConstraints.maxHeight.isFinite ? outerConstraints.maxHeight : height).toStringAsFixed(1)} '
-            'left=${leftColumnWidth.toStringAsFixed(1)} '
-            'right=${rightColumnWidth.toStringAsFixed(1)} '
-            'split=$shouldSplit';
-        if (_lastHeroDebugSignature != heroDebugSignature) {
-          debugPrint('[hero-layout] $heroDebugSignature');
-          _lastHeroDebugSignature = heroDebugSignature;
-        }
-
         if (shouldSplit) {
           final splitHeroStyle = display.copyWith(
             fontSize: (availableWidth * 0.048).clamp(56.0, 60.0),
@@ -2671,10 +2649,14 @@ class PartnersSection extends StatelessWidget {
         ? 72.0
         : width >= 900
         ? 56.0
-        : 32.0;
+        : 20.0;
     final sectionBottomPadding = 0.0;
     final visibleSectionHeight = math.max(0.0, height - _snapViewportInset);
     final contentHeight = math.max(
+      0.0,
+      visibleSectionHeight - sectionTopPadding - sectionBottomPadding,
+    );
+    final responsiveContentHeight = math.max(
       0.0,
       visibleSectionHeight - sectionTopPadding - sectionBottomPadding,
     );
@@ -2687,6 +2669,8 @@ class PartnersSection extends StatelessWidget {
       child: LayoutBuilder(
         builder: (context, constraints) {
           final canPinFooter = usePinnedViewport && contentHeight > 0;
+          final useTallResponsiveLayout =
+              !canPinFooter && responsiveContentHeight > 0;
           final content = canPinFooter
               ? Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -2713,6 +2697,31 @@ class PartnersSection extends StatelessWidget {
                     ),
                     const _PartnersFooter(),
                   ],
+                )
+              : useTallResponsiveLayout
+              ? SizedBox(
+                  height: responsiveContentHeight,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Center(
+                        child: Text(
+                          'OUR PARTNERS',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontSize: isDesktop ? 40 : 30,
+                            height: 1.1,
+                            fontWeight: FontWeight.w700,
+                            letterSpacing: 1.8,
+                            color: _accent,
+                          ),
+                        ),
+                      ),
+                      const SizedBox(height: 24),
+                      const Expanded(child: Center(child: _PartnerMarquee())),
+                      const _PartnersFooter(),
+                    ],
+                  ),
                 )
               : Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -2808,35 +2817,24 @@ class _PartnersFooter extends StatelessWidget {
                         ],
                       )
                     : const Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          _FooterColumn(
-                            title: 'Sections',
-                            lines: [
-                              'About Us',
-                              'Members',
-                              'Programs',
-                              'Events',
-                              'Leadership',
-                              'Partners',
-                            ],
+                          _FooterMobileSections(),
+                          SizedBox(height: 18),
+                          Text(
+                            'secretariat.aatappp@gmail.com',
+                            textAlign: TextAlign.center,
+                            style: _footerDesktopItemStyle,
                           ),
-                          SizedBox(height: 26),
-                          _FooterColumn(
-                            title: 'Contact',
-                            lines: ['secretariat.aatappp@gmail.com'],
+                          SizedBox(height: 18),
+                          Text(
+                            '© 2026 AATAPPP All Rights Reserved.',
+                            textAlign: TextAlign.center,
+                            style: _footerDesktopItemStyle,
                           ),
                         ],
                       ),
               ),
-              if (!wide) ...[
-                const SizedBox(height: 24),
-                Text(
-                  '© 2026 AATAPPP All Rights Reserved.',
-                  textAlign: TextAlign.center,
-                  style: _footerDesktopItemStyle,
-                ),
-              ],
               const SizedBox(height: 24),
             ],
           ),
@@ -3024,6 +3022,28 @@ class _FooterDesktopContact extends StatelessWidget {
           style: _footerDesktopItemStyle,
         ),
       ),
+    );
+  }
+}
+
+class _FooterMobileSections extends StatelessWidget {
+  const _FooterMobileSections();
+
+  @override
+  Widget build(BuildContext context) {
+    return Wrap(
+      alignment: WrapAlignment.center,
+      runAlignment: WrapAlignment.center,
+      spacing: 16,
+      runSpacing: 12,
+      children: const [
+        _FooterSectionLink(label: 'About Us', target: 'About'),
+        _FooterSectionLink(label: 'Members', target: 'Members'),
+        _FooterSectionLink(label: 'Programs', target: 'Programs'),
+        _FooterSectionLink(label: 'Events', target: 'Events'),
+        _FooterSectionLink(label: 'Leadership', target: 'Leadership'),
+        _FooterSectionLink(label: 'Partners', target: 'Partners'),
+      ],
     );
   }
 }
