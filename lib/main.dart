@@ -608,6 +608,7 @@ class HeroSection extends StatelessWidget {
                                 ),
                                 const SizedBox(height: 28),
                                 const _HeroHighlight(),
+                                const SizedBox(height: 24),
                                 const _HeroStatsRail(),
                               ],
                             ),
@@ -737,10 +738,8 @@ class _HeroHighlight extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final isMobile = MediaQuery.sizeOf(context).width < 760;
-
     return Container(
-      margin: EdgeInsets.only(bottom: isMobile ? 24 : 0),
+      margin: const EdgeInsets.only(bottom: 0),
       padding: const EdgeInsets.all(24),
       decoration: BoxDecoration(
         color: Colors.white.withValues(alpha: 0.95),
@@ -1291,7 +1290,6 @@ class MembersSection extends StatelessWidget {
       tone: SectionTone.light,
       contentAlignment: Alignment.topCenter,
       topPadding: 24,
-      bottomPadding: isDesktop ? null : 0,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -1342,7 +1340,7 @@ class MembersSection extends StatelessWidget {
                     ),
                   ],
                 ),
-          SizedBox(height: isDesktop ? 28 : 24),
+          if (isDesktop) const SizedBox(height: 28),
         ],
       ),
     );
@@ -2093,8 +2091,6 @@ class _CommitteeIndex extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final isMobile = MediaQuery.sizeOf(context).width < 760;
-
     return Column(
       children: _committees
           .asMap()
@@ -2102,9 +2098,7 @@ class _CommitteeIndex extends StatelessWidget {
           .map(
             (entry) => Padding(
               padding: EdgeInsets.only(
-                bottom: entry.key == _committees.length - 1
-                    ? (isMobile ? 24 : 8)
-                    : 8,
+                bottom: entry.key == _committees.length - 1 ? 8 : 8,
               ),
               child: Container(
                 padding: const EdgeInsets.fromLTRB(0, 10, 0, 0),
@@ -2175,6 +2169,7 @@ class PartnersSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final width = MediaQuery.sizeOf(context).width;
+    final isMobile = width < 760;
     final baseBottomPadding = width >= 1200
         ? 72.0
         : width >= 900
@@ -2182,7 +2177,7 @@ class PartnersSection extends StatelessWidget {
         : 32.0;
     return SectionShell(
       tone: SectionTone.dark,
-      bottomPadding: baseBottomPadding - 24,
+      bottomPadding: isMobile ? 24 : baseBottomPadding - 24,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -2874,7 +2869,9 @@ class SectionShell extends StatelessWidget {
     final isMobile = viewportWidth < 760;
     final sectionMinHeight = viewportHeight > 0 ? viewportHeight : 980.0;
     final horizontalPadding = 24.0;
-    final verticalPadding = viewportWidth >= 1200
+    final verticalPadding = isMobile
+        ? 24.0
+        : viewportWidth >= 1200
         ? 72.0
         : viewportWidth >= 900
         ? 56.0
