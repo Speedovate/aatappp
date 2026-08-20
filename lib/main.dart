@@ -608,7 +608,7 @@ class HeroSection extends StatelessWidget {
                                 ),
                                 const SizedBox(height: 28),
                                 const _HeroHighlight(),
-                                const SizedBox(height: 18),
+                                const SizedBox(height: 24),
                                 const _HeroStatsRail(),
                               ],
                             ),
@@ -1284,7 +1284,8 @@ class MembersSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final isDesktop = MediaQuery.sizeOf(context).width >= 1000;
+    final width = MediaQuery.sizeOf(context).width;
+    final isDesktop = width >= 1000;
     return SectionShell(
       tone: SectionTone.light,
       contentAlignment: Alignment.topCenter,
@@ -1339,7 +1340,7 @@ class MembersSection extends StatelessWidget {
                     ),
                   ],
                 ),
-          const SizedBox(height: 28),
+          SizedBox(height: isDesktop ? 28 : 24),
         ],
       ),
     );
@@ -2090,13 +2091,19 @@ class _CommitteeIndex extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final isMobile = MediaQuery.sizeOf(context).width < 760;
+
     return Column(
       children: _committees
           .asMap()
           .entries
           .map(
             (entry) => Padding(
-              padding: const EdgeInsets.only(bottom: 8),
+              padding: EdgeInsets.only(
+                bottom: entry.key == _committees.length - 1
+                    ? (isMobile ? 24 : 8)
+                    : 8,
+              ),
               child: Container(
                 padding: const EdgeInsets.fromLTRB(0, 10, 0, 0),
                 decoration: BoxDecoration(
