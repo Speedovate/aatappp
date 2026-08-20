@@ -1821,8 +1821,6 @@ class _PosterStack extends StatelessWidget {
         Expanded(
           child: _PosterSlice(
             title: '2025 members’ appreciation night',
-            subtitle:
-                'Official event material for our 10th anniversary and members’ appreciation night.',
             imagePath: 'assets/aatappp/accomplishment-2025.jpg',
           ),
         ),
@@ -1830,8 +1828,6 @@ class _PosterStack extends StatelessWidget {
         Expanded(
           child: _PosterSlice(
             title: '2026 event feature',
-            subtitle:
-                'Official promotional material for the Powerdive swimming event in Puerto Princesa City.',
             imagePath: 'assets/aatappp/accomplishment-2026.jpg',
           ),
         ),
@@ -1841,14 +1837,9 @@ class _PosterStack extends StatelessWidget {
 }
 
 class _PosterSlice extends StatelessWidget {
-  const _PosterSlice({
-    required this.title,
-    required this.subtitle,
-    required this.imagePath,
-  });
+  const _PosterSlice({required this.title, required this.imagePath});
 
   final String title;
-  final String subtitle;
   final String imagePath;
 
   @override
@@ -1869,11 +1860,6 @@ class _PosterSlice extends StatelessWidget {
             fontWeight: FontWeight.w700,
             letterSpacing: 1.8,
           ),
-        ),
-        const SizedBox(height: 6),
-        Text(
-          subtitle,
-          style: const TextStyle(fontSize: 13, height: 1.5, color: _muted),
         ),
       ],
     );
