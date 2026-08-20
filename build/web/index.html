@@ -280,13 +280,6 @@
         >
           Open In Chrome
         </button>
-        <button
-          id="social-browser-gate__continue"
-          class="social-browser-gate__button social-browser-gate__button--secondary"
-          type="button"
-        >
-          Continue Here
-        </button>
       </div>
       <p id="social-browser-gate__hint">
         If Chrome does not open automatically, tap your browser menu and choose
@@ -321,38 +314,13 @@
       return href;
     }
 
-    async function startFlutterApp() {
-      if (!window._flutter || !window._flutter.loader) {
-        window.setTimeout(startFlutterApp, 120);
-        return;
-      }
-
-      await _flutter.loader.load({
-        config: {
-          canvasKitBaseUrl: 'canvaskit/',
-        },
-        onEntrypointLoaded: async function (engineInitializer) {
-          const appRunner = await engineInitializer.initializeEngine();
-          await appRunner.runApp();
-        },
-      });
-    }
-
     window.addEventListener('DOMContentLoaded', function () {
       const isSocialInApp = window.__AATAPPP_SOCIAL_INAPP__ === true;
       const openButton = document.getElementById('social-browser-gate__open');
-      const continueButton = document.getElementById('social-browser-gate__continue');
 
       if (openButton) {
         openButton.addEventListener('click', function () {
           window.location.href = getChromeOpenUrl();
-        });
-      }
-
-      if (continueButton) {
-        continueButton.addEventListener('click', function () {
-          document.documentElement.removeAttribute('data-social-inapp');
-          startFlutterApp();
         });
       }
 
