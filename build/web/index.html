@@ -61,12 +61,12 @@
   <link rel="manifest" href="manifest.json">
   <style>
     :root {
-      --startup-logo-width: 220px;
+      --startup-logo-width: 180px;
     }
 
     @media (max-width: 640px) {
       :root {
-        --startup-logo-width: 152px;
+        --startup-logo-width: 120px;
       }
     }
 
@@ -143,7 +143,7 @@
     }
 
     #app-startup-splash__footer img {
-      width: min(168px, 42vw);
+      width: var(--startup-logo-width);
       height: auto;
       display: block;
       opacity: 0.9;
