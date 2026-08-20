@@ -608,7 +608,6 @@ class HeroSection extends StatelessWidget {
                                 ),
                                 const SizedBox(height: 28),
                                 const _HeroHighlight(),
-                                const SizedBox(height: 24),
                                 const _HeroStatsRail(),
                               ],
                             ),
@@ -738,8 +737,10 @@ class _HeroHighlight extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final isMobile = MediaQuery.sizeOf(context).width < 760;
+
     return Container(
-      margin: const EdgeInsets.only(top: 0),
+      margin: EdgeInsets.only(bottom: isMobile ? 24 : 0),
       padding: const EdgeInsets.all(24),
       decoration: BoxDecoration(
         color: Colors.white.withValues(alpha: 0.95),
@@ -1290,6 +1291,7 @@ class MembersSection extends StatelessWidget {
       tone: SectionTone.light,
       contentAlignment: Alignment.topCenter,
       topPadding: 24,
+      bottomPadding: isDesktop ? null : 0,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
