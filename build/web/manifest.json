@@ -1,0 +1,60 @@
+{
+    "name": "AATAPPP",
+    "short_name": "AATAPPP",
+    "id": ".",
+    "start_url": ".",
+    "scope": ".",
+    "display": "standalone",
+    "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
+    "background_color": "#050505",
+    "theme_color": "#050505",
+    "description": "Official website of the Association of Accredited Tourist Accommodations of Puerto Princesa, Palawan, Inc.",
+    "lang": "en",
+    "dir": "ltr",
+    "orientation": "portrait-primary",
+    "categories": ["travel", "business", "organization"],
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "icons/Icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "icons/Icon-maskable-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/Icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ],
+    "shortcuts": [
+        {
+            "name": "About Us",
+            "short_name": "About",
+            "url": "./#about"
+        },
+        {
+            "name": "Our Members",
+            "short_name": "Members",
+            "url": "./#members"
+        },
+        {
+            "name": "Our Partners",
+            "short_name": "Partners",
+            "url": "./#partners"
+        }
+    ]
+}

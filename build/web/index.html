@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+  >
+  <meta
+    name="description"
+    content="Official website of the Association of Accredited Tourist Accommodations of Puerto Princesa, Palawan, Inc."
+  >
+  <meta name="application-name" content="AATAPPP">
+  <meta name="theme-color" content="#050505">
+  <meta name="msapplication-TileColor" content="#050505">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AATAPPP | Puerto Princesa, Palawan">
+  <meta
+    property="og:description"
+    content="Official website of the Association of Accredited Tourist Accommodations of Puerto Princesa, Palawan, Inc."
+  >
+  <meta property="og:image" content="/social-preview.png">
+  <meta property="og:image:width" content="1365">
+  <meta property="og:image:height" content="1080">
+  <meta property="og:url" content="https://aatappp.com/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AATAPPP | Puerto Princesa, Palawan">
+  <meta
+    name="twitter:description"
+    content="Official website of the Association of Accredited Tourist Accommodations of Puerto Princesa, Palawan, Inc."
+  >
+  <meta name="twitter:image" content="/social-preview.png">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="AATAPPP">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <link rel="shortcut icon" href="favicon.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>AATAPPP</title>
+  <link rel="manifest" href="manifest.json">
+  <style>
+    :root {
+      --startup-logo-width: 220px;
+    }
+
+    @media (max-width: 640px) {
+      :root {
+        --startup-logo-width: 152px;
+      }
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overscroll-behavior-x: none;
+      background: #050505;
+    }
+
+    body {
+      overflow: hidden;
+    }
+
+    body,
+    flt-glass-pane,
+    flt-scene-host,
+    flt-semantics-host,
+    flt-semantics,
+    [flt-semantics-identifier] {
+      -webkit-user-select: text;
+      user-select: text;
+    }
+
+    #app-startup-splash {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background:
+        radial-gradient(circle at 78% 32%, rgba(152, 204, 61, 0.16), transparent 24%),
+        radial-gradient(circle at 16% 88%, rgba(152, 204, 61, 0.14), transparent 28%),
+        #050505;
+      z-index: 9999;
+    }
+
+    #app-startup-splash__content {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      padding: 24px;
+      box-sizing: border-box;
+    }
+
+    #app-startup-splash__logo-wrap {
+      position: absolute;
+      left: 24px;
+      right: 24px;
+      top: 24px;
+      bottom: 108px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #app-startup-splash__logo {
+      width: var(--startup-logo-width);
+      height: auto;
+      display: block;
+      image-rendering: auto;
+    }
+
+    #app-startup-splash__footer {
+      position: absolute;
+      left: 24px;
+      right: 24px;
+      bottom: 34px;
+      display: flex;
+      justify-content: center;
+      pointer-events: none;
+    }
+
+    #app-startup-splash__footer img {
+      width: min(168px, 42vw);
+      height: auto;
+      display: block;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <div id="app-startup-splash" aria-label="Loading AATAPPP">
+    <div id="app-startup-splash__content">
+      <div id="app-startup-splash__logo-wrap">
+        <img
+          id="app-startup-splash__logo"
+          src="assets/assets/aatappp/branding/aatappp-white-text.png"
+          alt="AATAPPP"
+        >
+      </div>
+      <div id="app-startup-splash__footer" aria-hidden="true">
+        <img src="assets/assets/aatappp/branding/sdv-footer-lite.png" alt="">
+      </div>
+    </div>
+  </div>
+  <!--
+    You can customize the "flutter_bootstrap.js" script.
+    This is useful to provide a custom configuration to the Flutter loader
+    or to give the user feedback during the initialization process.
+
+    For more details:
+    * https://docs.flutter.dev/platform-integration/web/initialization
+  -->
+  <script src="flutter_bootstrap.js" async></script>
+  <script>
+    window.addEventListener('flutter-first-frame', function () {
+      const splash = document.getElementById('app-startup-splash');
+      if (splash) {
+        splash.remove();
+      }
+    });
+  </script>
+</body>
+</html>
